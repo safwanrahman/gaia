@@ -3,6 +3,8 @@
 
 requireApp('settings/shared/test/unit/mocks/mock_navigator_moz_settings.js');
 
+mocha.globals(['Settings']);
+
 suite('start testing > ', function() {
   var realMozSettings;
   var realSettingsListener;

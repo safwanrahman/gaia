@@ -20,6 +20,9 @@ function switchReadOnlyProperty(originObject, propName, targetObj) {
   });
 }
 
+mocha.globals(['PairManager', 'BluetoothHelper', 'open', 'Pairview',
+               'PairExpiredDialog']);
+
 var mocksForPairManagerHelper = new MocksHelper([
   'BluetoothHelper',
   'Pairview',

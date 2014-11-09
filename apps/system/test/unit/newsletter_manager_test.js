@@ -11,6 +11,12 @@ require('/shared/test/unit/mocks/mock_navigator_datastore.js');
 require('/shared/test/unit/mocks/mock_l10n.js');
 requireApp('system/test/unit/mock_ftu_launcher.js');
 
+mocha.globals([
+  'sendWhenOnline',
+  'idleObserver',
+  'NewsletterManager'
+]);
+
 var mocksHelperForNewsletterManager = new MocksHelper([
   'FtuLauncher',
   'Datastore',

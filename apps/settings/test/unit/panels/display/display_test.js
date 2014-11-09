@@ -1,5 +1,9 @@
 'use strict';
 
+mocha.globals([
+  'MockSettingsListener'
+]);
+
 suite('start testing > ', function() {
   var DisplayContrustor;
 

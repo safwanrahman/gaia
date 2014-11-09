@@ -1,5 +1,7 @@
 'use strict';
 
+mocha.globals(['MockL10n']);
+
 suite('BatteryItem', function() {
   var realL10n;
   var modules = [

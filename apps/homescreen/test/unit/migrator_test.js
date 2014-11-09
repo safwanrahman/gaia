@@ -14,6 +14,8 @@ requireApp('homescreen/js/grid_components.js');
 requireApp('homescreen/js/bookmark.js');
 requireApp('homescreen/js/state.js');
 
+mocha.globals(['asyncStorage']);
+
 suite('migrator.js >', function() {
 
   var realSetMessageHandler = null,
